@@ -1,0 +1,125 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Full-screen background */
+.background {
+    background-image: url('https://www.example.com/your-image.jpg');  /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container to hold the content */
+.container {
+    background-color: rgba(255, 255, 255, 0.85); /* Slight transparency */
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+}
+
+/* Header and Subheader */
+h1 {
+    color: #2D8E7F;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+p {
+    color: #6c757d; /* Subtle gray for the paragraph */
+    font-size: 1.1rem;
+}
+
+/* File Upload Input */
+form input[type="file"] {
+    margin: 20px 0;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Button Style */
+button {
+    padding: 12px 30px;
+    background-color: #2D8E7F;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #248B73;
+}
+
+/* Transcription Textarea */
+#transcription {
+    width: 100%;
+    height: 70px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f4f7fa;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    color: #333;
+    resize: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-y: auto;
+}
+
+/* Footer */
+footer {
+    color: #161616;
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    form input[type="file"], button {
+        width: 100%;
+    }
+
+    #transcription {
+        height: 200px;
+    }
+}

@@ -1,0 +1,2 @@
+Flask==2.1.2
+groq==1.0.0  # replace with actual version
